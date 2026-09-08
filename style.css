@@ -179,6 +179,8 @@ svg.dg{display:block;width:100%;height:auto}
 
 .foot{font-family:var(--mono);font-size:10.5px;line-height:2;color:var(--ink-2);margin-top:38px;padding-top:20px;border-top:1px solid var(--line)}
 .foot b{color:var(--ink);font-weight:600}
+.foot a{color:var(--ink);font-weight:600;text-decoration:none}
+.foot a:hover,.foot a:focus-visible{color:var(--royal);text-decoration:underline}
 
 @media(max-width:600px){
   .wrap{padding:28px 16px 88px}
