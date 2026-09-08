@@ -177,11 +177,6 @@ svg.dg{display:block;width:100%;height:auto}
 
 .field:focus-visible,.nav button:focus-visible,.dots button:focus-visible,.chk input:focus-visible{outline:2px solid var(--royal);outline-offset:3px}
 
-.foot{font-family:var(--mono);font-size:10.5px;line-height:2;color:var(--ink-2);margin-top:38px;padding-top:20px;border-top:1px solid var(--line)}
-.foot b{color:var(--ink);font-weight:600}
-.foot a{color:var(--ink);font-weight:600;text-decoration:none}
-.foot a:hover,.foot a:focus-visible{color:var(--royal);text-decoration:underline}
-
 @media(max-width:600px){
   .wrap{padding:28px 16px 88px}
   .step{padding:26px 22px 30px;border-radius:24px}
@@ -219,5 +214,4 @@ svg.dg{display:block;width:100%;height:auto}
   .flag,.flow-cap{font-size:6pt}
   .flow{gap:4pt;flex-wrap:nowrap}
   .node{padding:5pt 8pt;font-size:7.6pt}
-  .foot{font-size:6.4pt;line-height:1.7;margin-top:10pt;padding-top:6pt}
 }
