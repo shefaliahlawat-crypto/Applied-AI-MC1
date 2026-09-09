@@ -60,7 +60,7 @@ h1{font-size:clamp(20px,2.8vw,26px);line-height:1.08;font-weight:800;letter-spac
 .fill{height:100%;width:10%;background:var(--royal);border-radius:999px;transition:width .28s ease}
 .count{font-family:var(--mono);font-size:11.5px;font-weight:600;letter-spacing:.14em;color:var(--ink-2);white-space:nowrap}
 
-#steps{flex:1 1 auto;min-height:0}
+#steps{flex:1 1 auto;min-height:0;min-width:0}
 
 /* step surface */
 .step{
@@ -182,23 +182,26 @@ svg.dg{display:block;width:100%;height:auto}
   .flow-cap{text-align:left}
 }
 
-.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-top:10px;flex:0 0 auto}
-.nav button{
+.stage{flex:1 1 auto;min-height:0;display:flex;align-items:stretch;gap:14px}
+.side-nav{
+  flex:0 0 auto;align-self:center;
   font-family:var(--sans);font-size:15.5px;font-weight:700;letter-spacing:-.01em;
-  min-height:52px;padding:14px 30px;border-radius:999px;cursor:pointer;
+  min-height:52px;padding:14px 28px;border-radius:999px;cursor:pointer;
   border:1px solid var(--line);background:var(--paper);color:var(--ink);
 }
-.nav button.primary{background:var(--royal);border-color:var(--royal);color:#fff}
-.nav button[disabled]{opacity:.35;cursor:not-allowed}
+.side-nav.primary{background:var(--royal);border-color:var(--royal);color:#fff}
+.side-nav[disabled]{opacity:.35;cursor:not-allowed}
 .dots{display:flex;gap:7px;justify-content:center;flex-wrap:wrap;margin-top:8px;flex:0 0 auto}
 .dots button{width:8px;height:8px;padding:0;border-radius:999px;border:1px solid var(--line);background:var(--paper);cursor:pointer}
 .dots button[aria-current="true"]{background:var(--royal);border-color:var(--royal);width:22px}
 
-.field:focus-visible,.nav button:focus-visible,.dots button:focus-visible,.chk input:focus-visible{outline:2px solid var(--royal);outline-offset:3px}
+.field:focus-visible,.side-nav:focus-visible,.dots button:focus-visible,.chk input:focus-visible{outline:2px solid var(--royal);outline-offset:3px}
 
 @media(max-width:600px){
   .wrap{padding:14px 16px}
   .step{padding:18px 18px 20px;border-radius:20px}
+  .stage{gap:8px}
+  .side-nav{padding:14px 14px;font-size:13px;min-width:0}
 }
 @media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
 
