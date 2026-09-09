@@ -133,15 +133,15 @@ textarea.field{border-radius:16px;min-height:88px;resize:vertical;font-family:va
 .tally.done{color:var(--ink)}
 .tally.done::before{content:"";display:inline-block;width:8px;height:8px;border-radius:999px;background:var(--gold);margin-right:9px;vertical-align:middle}
 
-figure{margin:26px 0 0}
+figure{margin:16px 0 0}
 svg.dg{display:block;width:100%;height:auto}
 
 /* contrast diagram — three real columns so captions wrap instead of colliding */
-.tri{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;align-items:start}
-.tri>div{padding:16px;border-radius:16px}
+.tri{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;align-items:start}
+.tri>div{padding:16px;border-radius:16px;background:var(--surface)}
 .tri .focus{background:var(--royal-tint)}
-.glyph{height:92px;display:flex;align-items:flex-end}
-.glyph svg{height:92px;width:auto}
+.glyph{height:72px;display:flex;align-items:flex-end}
+.glyph svg{height:72px;width:auto}
 
 /* four-up icon summary */
 .quad{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;align-items:start}
@@ -152,7 +152,7 @@ svg.dg{display:block;width:100%;height:auto}
 .quad .cap-b{font-size:12.5px;max-width:22ch}
 .elbow{display:block;margin:2px 0 6px 10px}
 .cap-t{font-size:17px;font-weight:800;letter-spacing:-.02em;margin:0}
-.cap-b{font-size:14px;line-height:1.5;color:var(--ink-2);margin:5px 0 0;max-width:26ch}
+.cap-b{font-size:14px;line-height:1.5;color:var(--ink-2);margin:5px 0 0;max-width:none}
 .flag{
   font-family:var(--mono);font-size:10px;font-weight:600;letter-spacing:.18em;
   text-transform:uppercase;color:var(--royal);margin:12px 0 0;
