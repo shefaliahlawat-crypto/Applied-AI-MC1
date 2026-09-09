@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!--
-  AAI-E-MC1-S01-READ01 — What This Tool Actually Is
+  AAI-E-MC1-S01-READ01 — Understanding What Is an AI Tool?
   Swift AI Academy · A ConveGenius company
   Keep index.html, style.css and script.js in the same folder.
 -->
@@ -8,7 +8,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>What This Tool Actually Is — AAI-E-MC1-S01-READ01</title>
+<title>Understanding What Is an AI Tool? — AAI-E-MC1-S01-READ01</title>
 <link rel="preconnect" href="https://api.fontshare.com">
 <link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@500,600,700,800&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Rubik:wght@500;600;700;800&display=swap" rel="stylesheet">
@@ -31,53 +31,108 @@
 </header>
 
 <p class="eyebrow">First contact</p>
-<h1>What This Tool Actually Is</h1>
-<p class="standfirst">You can hand an approved AI tool one small task and check what comes back. That is the whole skill on this page.</p>
+<h1>Understanding What Is an AI Tool?</h1>
+<p class="standfirst">AI tools like ChatGPT, Gemini and Claude can write things for you in seconds. This page shows you what they are, how to try one safely, and how to check what they give you.</p>
 
 <div class="progress">
   <div class="track"><div class="fill" id="fill"></div></div>
-  <div class="count" id="count">01 / 09</div>
+  <div class="count" id="count">01 / 10</div>
 </div>
 
 <main id="steps">
 
 <!-- 1 -->
-<section class="step on" aria-label="Before you read" data-pc="">
-  <p class="eyebrow">Before you read</p>
-  <h2>Name one task you would let a computer draft for you, and one you would not.</h2>
-  <label for="pred" style="position:absolute;left:-9999px">Your one-line answer</label>
-  <input id="pred" class="field" type="text" placeholder="Yes to… / No to…" autocomplete="off">
-  <p class="hint">One line is enough. I will come back to your answer once you have seen what this tool does well and badly.</p>
+<section class="step on" aria-label="Before you start" data-pc="">
+  <p class="eyebrow">Before you start</p>
+  <h2>Have you used an AI tool before?</h2>
+  <label for="pred" style="position:absolute;left:-9999px">Have you used an AI tool before, and if yes, which one</label>
+  <input id="pred" class="field" type="text" placeholder="e.g. Yes, ChatGPT / No, this is my first time" autocomplete="off">
+  <p class="hint">There is no wrong answer. This just helps you notice how much you already know before we start.</p>
 </section>
 
 <!-- 2 -->
-<section class="step" aria-label="Two worked examples" hidden data-pc="">
+<section class="step" aria-label="AI tools to try" hidden data-pc="">
+  <p class="eyebrow">Before you continue</p>
+  <h2>A few AI tools you can try</h2>
+  <p>There are many AI tools. Three common ones are ChatGPT, Gemini and Claude. All three work in a simple way: you type what you want, and they write an answer for you.</p>
+
+  <ol class="plain">
+    <li><b>ChatGPT.</b> Made by a company called OpenAI.</li>
+    <li><b>Gemini.</b> Made by Google.</li>
+    <li><b>Claude.</b> Made by a company called Anthropic.</li>
+  </ol>
+
+  <div class="callout">
+    <div class="hd">
+      <span class="tile">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#3D5AFE" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m0 0l-4-4m4 4l4-4"/><path d="M5 17v2a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2v-2"/></svg>
+      </span>
+      <h3>How to get one on your phone or computer</h3>
+    </div>
+    <ul class="plain">
+      <li><b>On a computer.</b> Open your browser, search for the tool's name, then sign in or make a free account.</li>
+      <li><b>On an Android phone.</b> Open the Play Store, search for the tool's name, tap Install, then open the app and sign in.</li>
+    </ul>
+  </div>
+
+  <p class="hint">Use only the tool your institution has approved, with your permitted account.</p>
+</section>
+
+<!-- 3 -->
+<section class="step" aria-label="Two worked examples with reflection" hidden data-pc="">
   <p class="eyebrow">Worked examples</p>
   <h2>One small task, one quick check — twice</h2>
+
   <p class="tag">Demonstration example — fictional</p>
   <p>You need to remind your class group about tomorrow's workshop practical, so you type:</p>
   <p class="typed">write a four-line reminder for tomorrow's workshop practical, ask everyone to bring their record book</p>
-  <p>A note comes back in seconds. You read it, correct the time, send it. The correcting mattered.</p>
+  <p class="said">Hi everyone! Quick reminder: tomorrow is our workshop practical. Please be on time and bring your record book. See you there.</p>
+  <p>You read the reply, correct the time, and send it. The correcting mattered.</p>
+
+  <div class="callout">
+    <div class="hd"><h3>How happy are you with this reply?</h3></div>
+    <ul class="chk">
+      <li><label><input type="checkbox">It says what I actually wanted</label></li>
+      <li><label><input type="checkbox">It is short and easy to read</label></li>
+      <li><label><input type="checkbox">I would only need small changes before sending it</label></li>
+    </ul>
+  </div>
 
   <p class="tag">Demonstration example — fictional</p>
   <p>Or the office needs a noticeboard announcement for next week's plant visit, so it types:</p>
   <p class="typed">write a five-line noticeboard announcement for a plant visit for final-year trainees, buses leave from the ITI gate at 8 am next Friday</p>
-  <p>The announcement reads well. Someone still checks the bus time, the gate and whether the visit is actually confirmed before it goes up.</p>
-</section>
+  <p class="said">Attention final-year trainees: join us for a plant visit next Friday. Buses leave from the ITI gate at 8 am sharp. Please arrive 10 minutes early and carry your ID card.</p>
+  <p>The announcement reads well. Someone still checks the bus time, the gate, and whether the visit is confirmed, before it goes up.</p>
 
-<!-- 3 -->
-<section class="step" aria-label="What it actually is" hidden data-pc="">
-  <p class="eyebrow">The definition</p>
-  <h2>It predicts likely language</h2>
-  <p>It has been trained on huge amounts of text and learned which words tend to follow which. Give it an instruction and it produces the language most likely to fit.</p>
-  <p>It is not looking anything up or working anything out. It assembles a likely answer, word by word. That is why the output reads well, and why it can read well and still be wrong.</p>
+  <div class="callout">
+    <div class="hd"><h3>How happy are you with this reply?</h3></div>
+    <ul class="chk">
+      <li><label><input type="checkbox">It says what I actually wanted</label></li>
+      <li><label><input type="checkbox">It is short and easy to read</label></li>
+      <li><label><input type="checkbox">I would only need small changes before sending it</label></li>
+    </ul>
+  </div>
+
+  <div class="callout verify">
+    <div class="hd"><h3>Your turn to reflect</h3></div>
+    <label for="reflect" style="position:absolute;left:-9999px">Your reflection on these replies</label>
+    <textarea id="reflect" class="field" rows="3" placeholder="What did you notice about these replies? Would you change anything before using them?"></textarea>
+  </div>
 </section>
 
 <!-- 4 -->
+<section class="step" aria-label="What it actually is" hidden data-pc="">
+  <p class="eyebrow">The definition</p>
+  <h2>It predicts likely language</h2>
+  <p>An AI tool has read a huge amount of text. From this, it has learned which words usually come after which. When you give it an instruction, it writes the words that are most likely to fit.</p>
+  <p>It is not searching the internet, and it is not doing maths. It builds its answer one word at a time, guessing what comes next. That is why its writing sounds smooth — and why smooth writing can still be wrong.</p>
+</section>
+
+<!-- 5 -->
 <section class="step" aria-label="Not a search engine, not a calculator" hidden data-pc="">
   <p class="eyebrow">The contrast</p>
   <h2>Not a search engine, not a calculator</h2>
-  <p>A search engine finds pages that already exist. A calculator applies fixed rules. This tool composes fresh text that sounds right for your instruction.</p>
+  <p>A search engine finds pages that already exist. A calculator follows fixed rules to get one right answer. An AI tool writes brand-new text that sounds right for what you asked.</p>
 
   <figure>
     <div class="tri" role="group" aria-label="Three systems compared: a search engine retrieves, a calculator computes, this tool composes">
@@ -148,10 +203,10 @@
 
 </section>
 
-<!-- 5 -->
+<!-- 6 -->
 <section class="step" aria-label="Three things it does well" hidden data-pc="">
   <p class="eyebrow">Three things it does well</p>
-  <h2>Where I would use it without hesitation</h2>
+  <h2>Where I would use it without worry</h2>
   <ol class="plain">
     <li><b>Drafting.</b> A first version of a notice, email or checklist that you will then edit.</li>
     <li><b>Reshaping.</b> Your rough points into clean sentences, or a long passage into short ones.</li>
@@ -159,24 +214,24 @@
   </ol>
 </section>
 
-<!-- 6 -->
+<!-- 7 -->
 <section class="step" aria-label="Three things it does badly" hidden data-pc="">
   <p class="eyebrow">Three things it does badly</p>
   <h2>Where I would not rely on it</h2>
   <ol class="plain">
-    <li><b>Facts and figures.</b> It can state a wrong date, price or specification with complete confidence.</li>
+    <li><b>Facts and figures.</b> It can give a wrong date, price or detail — and sound completely sure about it.</li>
     <li><b>Your local detail.</b> Batch timings, submission dates, your syllabus, the tool list in your workshop.</li>
-    <li><b>Judgement with consequences.</b> Safety steps, marks, money, anything you would put your name against.</li>
+    <li><b>Big decisions.</b> Safety steps, marks, money — anything you would put your name on.</li>
   </ol>
 </section>
 
-<!-- 7 -->
-<section class="step" aria-label="Back to your prediction" hidden data-pc="">
-  <p class="eyebrow">Back to your prediction</p>
+<!-- 8 -->
+<section class="step" aria-label="Back to your answer" hidden data-pc="">
+  <p class="eyebrow">Back to your answer</p>
   <h2>Useful draft, human check</h2>
-  <p class="said" id="echoWrap" hidden>You wrote: <span id="echo"></span></p>
-  <p id="noEcho">Look at the answer you wrote at the start.</p>
-  <p>Most learners land close to the line: drafting is safe, deciding is not.</p>
+  <p class="said" id="echoWrap" hidden>You told us: <span id="echo"></span></p>
+  <p id="noEcho">Look at what you told us at the start.</p>
+  <p>Whether or not you had used an AI tool before, you have now seen what it can do well — and where it can go wrong.</p>
 
   <p class="rule">Useful draft, human check. Every output is a draft until a person has checked it, and you are that person.</p>
 
@@ -198,7 +253,7 @@
   <p class="ahead">Coming up: this rule returns in <b>MC-3</b>, where you learn how to check an output properly.</p>
 </section>
 
-<!-- 8 -->
+<!-- 9 -->
 <section class="step" aria-label="Try this and check before use" hidden data-pc="">
   <p class="eyebrow">Your turn</p>
   <h2>Take it for one real task</h2>
@@ -231,18 +286,18 @@
       <li><label><input type="checkbox">Did I keep personal and confidential information out?</label></li>
       <li><label><input type="checkbox">Would I put my name on it?</label></li>
     </ul>
-    <p class="tally" data-tally>0 of 5 checked</p>
+    <p class="tally" data-tally data-done-label="— this is your work now">0 of 5 checked</p>
   </div>
 </section>
 
-<!-- 9 -->
+<!-- 10 -->
 <section class="step" aria-label="Recap" hidden data-pc="">
   <p class="eyebrow">Five lines to keep</p>
   <h2>Recap</h2>
   <ol class="plain">
     <li>It predicts likely text. It does not search and it does not calculate.</li>
     <li>It drafts, reshapes and explains well.</li>
-    <li>It gets facts, local detail and consequential judgement wrong.</li>
+    <li>It can get facts, local details and big decisions wrong.</li>
     <li>Approved tool, permitted account, no personal or confidential data.</li>
     <li>Useful draft, human check, every time.</li>
   </ol>

@@ -11,7 +11,7 @@
   var fill = document.getElementById('fill');
   var count = document.getElementById('count');
   var dots = document.getElementById('dots');
-  var ECHO_STEP = 6;
+  var ECHO_STEP = 7;
 
   steps.forEach(function(s, n){
     var b = document.createElement('button');
@@ -69,18 +69,20 @@
     pred.addEventListener('keydown', function(e){ if (e.key === 'Enter') go(i + 1); });
   }
 
-  var list = document.querySelector('.chk');
-  if (list) {
+  var chkLists = Array.prototype.slice.call(document.querySelectorAll('.chk'));
+  chkLists.forEach(function(list){
     var tally = list.parentNode.querySelector('[data-tally]');
+    if (!tally) return;
+    var doneLabel = tally.getAttribute('data-done-label') || '';
     list.addEventListener('change', function(){
       var boxes = list.querySelectorAll('input');
       var done = list.querySelectorAll('input:checked').length;
       tally.textContent = done === boxes.length
-        ? 'All five checked — this is your work now'
+        ? 'All ' + boxes.length + ' checked' + (doneLabel ? ' ' + doneLabel : '')
         : done + ' of ' + boxes.length + ' checked';
       tally.classList.toggle('done', done === boxes.length);
     });
-  }
+  });
 
   go(0);
 })();
